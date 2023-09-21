@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="jp">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>フォーメーション作成アプリ</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>フォーメーション作成アプリ</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">フォーメーション作成アプリ</h1>
+    </header>
+    <div class="main">
+      <div class="text-field">
+        <p>選手を入力してください</p>
+        <label for="fw">FW</label>
+        <input type="text" id="fw" name="fw" />
+        <label for="mf">MF</label>
+        <input type="text" id="mf" name="mf" />
+        <label for="df">DF</label>
+        <input type="text" id="df" name="df" />
+        <label for="gk">GK</label>
+        <input type="text" id="gk" name="gk" />
+        <input type="button" value="作成" id="button" />
+      </div>
+      <div class="formation">
+        <p id="fw-area"></p>
+        <p id="mf-area"></p>
+        <p id="df-area"></p>
+        <p id="gk-area"></p>
+      </div>
+    </div>
+    <script src="sample.js"></script>
+  </body>
 </html>
